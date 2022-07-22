@@ -1,0 +1,24 @@
+Step 1: Before the programming process, we make sure that the ESP32 board works
+By programming the LED of the board with different frequencies
+Step 2: Download the Arduino IDE (its environment)
+Step 3: identify the ESP32 board by searching about it in the Boards manager and installing it
+Step 4: select the board that we will work on (ESP32 Arduino - WEMOS D1 MINI ESP32)
+Step 5:  download the BLINK code to make sure that the board works
+
+// the setup function runs once when you press reset or power the board
+void setup() {
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+// the loop function runs over and over again forever
+void loop() {
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(1000);                       // wait for a second
+  digitalWrite(LED_BUILTIN, LOW);    // turn the LED off by making the voltage LOW
+  delay(1000);                       // wait for a second
+}
+
+
+
+Step 6: change the (delay)
